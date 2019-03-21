@@ -89,22 +89,22 @@ add_library(${PROJECT_NAME} SHARED
 target_link_libraries(zm zeda m)
 
 add_executable(deg2rad app/deg2rad.c)
-target_link_libraries(deg2rad zeda ${PROJECT_NAME})
+target_link_libraries(deg2rad ${PROJECT_NAME})
 
 add_executable(le app/le.c)
-target_link_libraries(le zeda ${PROJECT_NAME})
+target_link_libraries(le ${PROJECT_NAME})
 
 add_executable(pexp app/pexp.c)
-target_link_libraries(pexp zeda ${PROJECT_NAME})
+target_link_libraries(pexp ${PROJECT_NAME})
 
 add_executable(psolve app/pexp.c)
-target_link_libraries(psolve zeda ${PROJECT_NAME})
+target_link_libraries(psolve ${PROJECT_NAME})
 
 add_executable(rad2deg app/rad2deg.c)
-target_link_libraries(rad2deg zeda ${PROJECT_NAME})
+target_link_libraries(rad2deg ${PROJECT_NAME})
 
 add_executable(seqmod app/seqmod.c)
-target_link_libraries(seqmod zeda ${PROJECT_NAME})
+target_link_libraries(seqmod ${PROJECT_NAME})
 
 # Install
 install (
